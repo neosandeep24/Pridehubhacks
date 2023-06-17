@@ -1,30 +1,37 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navigation from './Navigation';
+import Layout from './layout';
 import Home from "./pages/home"
 import Blogs from "./pages/blogs";
+import Faq from './pages/Faqq';
 import Contact from "./pages/Contact";
-import NoPage from "./pages/NoPage"
+import History from './pages/History';
+import Events from './pages/events';
+import Volunteer from './pages/volunteer';
 
-function App() {
+export default function App() {
   return (
 
     <div className="App">
       <header className="App-header">
         <h1>PRIDEHUB</h1>
       </header>
-     <Navigation/>
-    <BrowserRouter>
+      <div className="router">
+      <BrowserRouter>
       <Routes>
-          <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
+          <Route path="Faq" element={<Faq />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="History" element={<History />} />
+          <Route path="Events" element={<Events />} />
+          <Route path="Volunteer" element={<Volunteer />} />
+          <Route path="*" element={<Home />} />
+        </Route>
       </Routes>
     </BrowserRouter>
- 
+ </div>
     </div>
   );
 }
-
-export default App;

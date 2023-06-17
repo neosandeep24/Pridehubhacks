@@ -1,9 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
 
-import Faq from "./pages/faq";
-import Contact from "./pages/Conatct";
-import Blogs from "./pages/blogs";
-import home from "./pages/home"
 
 const Navigation = () => {
   return (
@@ -17,12 +13,24 @@ const Navigation = () => {
             <Link to="/blogs">Blogs</Link>
           </li>
           <li>
+            <Link to="/Volunteer">Volunteer</Link>
+          </li>
+          <li>
+            <Link to="/Events">Events and Workshops</Link>
+          </li>
+          <li>
+          <Link to="/History">History</Link>
+          </li>
+          <li>
             <Link to="/Contact">Contact</Link>
+          </li>
+          <li>
+          <Link to="/Faq">FAQ</Link>
           </li>
         </ul>
       </nav>
 
-      
+    <Outlet/>
     </>
   )
 };
