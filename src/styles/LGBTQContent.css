@@ -1,0 +1,68 @@
+.lgbtq-content-page {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  .page-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .navigation-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .navigation-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navigation-item.active {
+    background-color: #ccc;
+  }
+  
+  /* Example for ContentSection component */
+  .content-section {
+    margin-bottom: 20px;
+    background-color :#20bf55;
+    background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);    
+    padding: 10px 10px;
+  }
+  
+  
+  .section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-content {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .section-item {
+    margin-bottom: 10px;
+  }
+  
+  .section-item-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .section-item-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  

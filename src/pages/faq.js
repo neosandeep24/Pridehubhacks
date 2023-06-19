@@ -10,7 +10,7 @@ import React from 'react'
     }
     return(
         <div className="faq">
-            {props.setup && <h3>{props.setup}</h3>} <button onClick={toggleShown}>{butu}</button>
+            {props.setup && <h3>{props.setup}</h3>} <button onClick={toggleShown} className="faqBut">{butu}</button>
             <div className="answ">
             {isShown && <p>{props.punchline}</p>}
             </div>

@@ -13,9 +13,6 @@ const Navigation = () => {
             <Link to="/blogs">Blogs</Link>
           </li>
           <li>
-            <Link to="/Volunteer">Volunteer</Link>
-          </li>
-          <li>
             <Link to="/Events">Events and Workshops</Link>
           </li>
           <li>

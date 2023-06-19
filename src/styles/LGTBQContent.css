@@ -1,0 +1,40 @@
+.lgbtq-content-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .navigation-item {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .navigation-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .navigation-item.active {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .content-section {
+    margin-bottom: 20px;
+  }
+  
+  .content-section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .content-section-content {
+    margin-bottom: 10px;
+  }
+  

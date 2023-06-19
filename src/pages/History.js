@@ -1,8 +1,13 @@
 import '../App.css'
+import one from '../images/1.jpg'
+import two from '../images/2.jpg'
+import five from '../images/5.jpg'
 function History()
 {
   return(
     <div className="History">
+    <img src={one} className="historyi" alt=''/>
+    <br/>
     <h1 className="historyh">History</h1>
     <br/>
     <h2>Pre-Columbian Americas</h2>
@@ -21,6 +26,8 @@ function History()
      Several Mughal noblemen and emperors and other Muslim rulers of South Asia are known to have had homosexual inclinations.
     </p>
     <h2>Renaissance</h2>
+    <br/>
+    <img src={five} className="historyii"alt=''/>
     <p>The Renaissance saw intense oppression of homosexual relationships by the Roman Catholic Church. Homosexual activity radically passes from being completely legal in most of Europe to incurring the death penalty in most European states.'
         In France, first-offending sodomites lost their testicles, second offenders lost their penis, and third offenders were burned. Women caught in same-sex acts would be mutilated and executed as well.
         Thomas Aquinas argued that sodomy was second only to murder in the ranking of sins.The church used every means at its disposal to fight what it considered to be the "corruption of sodomy". 
@@ -40,6 +47,7 @@ By the 1930s both fruit and fruitcake as well as numerous other words were seen 
  So transferring the meaning of fruitcake, nutty, to someone who is deemed insane, or crazy, may have seemed rational at the time and many apparently believed that LGBT people were mentally unsound
   In the United States, psychiatric institutions ("mental hospitals") where many of these procedures were carried out were called fruitcake factories while in 1960s Australia they were called fruit factories.
         </p>
+        <img src={two} className="historyii" alt=""/>
     </div>
   )
 }

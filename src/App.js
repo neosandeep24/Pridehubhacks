@@ -1,37 +1,44 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from './layout';
-import Home from "./pages/home"
-import Blogs from "./pages/blogs";
-import Faq from './pages/Faqq';
+// App.js
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Stories from "./pages/Stories";
 import Contact from "./pages/Contact";
-import History from './pages/History';
-import Events from './pages/events';
-import Volunteer from './pages/volunteer';
+import Education from "./pages/Education";
+import History from "./pages/History";
+import Faq from "./pages/Faqq"
+import Campaigns from "./pages/Campaigns";
+import Home from "./pages/home";
+import PrideHubLogo from "./components/PrideHubLogo";
+import Blogs from "./pages/blogs"
 
-export default function App() {
+
+import "./App.css";
+
+const App = () => {
   return (
-
-    <div className="App">
-      <header className="App-header">
-        <h1>PRIDEHUB</h1>
-      </header>
-      <div className="router">
+    <div className="app-container">
+      <h1 className="App-header">Pride Hub</h1>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="Faq" element={<Faq />} />
+          <Link to="/">
+           
+              <PrideHubLogo />
+          </Link>
+          <Navigation />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="Stories" element={<Stories />} />
           <Route path="contact" element={<Contact />} />
           <Route path="History" element={<History />} />
-          <Route path="Events" element={<Events />} />
-          <Route path="Volunteer" element={<Volunteer />} />
+          <Route path="Blogs" element={<Blogs />} />
+          <Route path="Faq" element={<Faq/>} />
+          <Route path="education" element={<Education />} />
+          <Route path="campaigns" element={<Campaigns />} />
           <Route path="*" element={<Home />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
- </div>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
+
+export default App;
